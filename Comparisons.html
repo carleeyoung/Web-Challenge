@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Weather Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Comparisons.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+          </ul>
+          <button class="nav-item dropdown btn-secondary">
+            <a class="nav-link dropdown-toggle btn-secondary" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Lattitude Vs Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Temp.html">Temperature</a>
+                <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+            </div>
+          </button>
+        </div>
+      </nav>
+
+    <!-- About this webpage -->
+    <div class="container-fluid bg-secondary text-white">
+        <!-- <div class="row p-3">
+            <div class="col-6"><div class="p-3 border bg-dark">
+                <h1>Comparisons</h1>
+                <p>Have you ever wondered about what factors cause the weather to change around the world?  
+                    As you travel north or south of the equator, you will notice changes in climate.  what 
+                    weather factors change as you get further from or closer to the equator?  
+                    Weather data was collected from more than 500 cities generated from randomly selected latitude and
+                    longitude coordinates. Relationships between latitude and temperature, humidity, cloudiness, and wind speed were
+                    analyzed. From these results, the list was restricted by pre-determined "ideal" weather conitions. From the
+                    reduced data set of cities with ideal weather conditions, the nearest hotels were found and mapped.</p>
+            </div>        
+            </div> -->
+
+        
+        <div class="col-12">
+            <div class="row"><div class="p-3 border bg-dark">
+                <h1 class="ml-3">Comparisons</h1>
+                <div class="col-auto">
+                    <div class="row">
+                        <div class="col-3"><div class="p-1">
+                            <img src="Resources/Max Temperature_vs_Lat_north.png" class="mw-100" alt="Latitude Vs temperature">
+                        </div></div>
+                        <div class="col-3"><div class="p-1">
+                          <img src="Resources/Max Temperature_vs_Lat_south.png" class="mw-100" alt="Latitude Vs temperature">
+                      </div></div>
+                        <div class="col-6"><div class="p-1"></div>
+                        <h4>Latitude Vs Temperature Correlation</h4>
+                        <p>Temperature and latitude are directly proportional when moving north from the southern hemisphere 
+                          toward the equator.  As the latitude increases, the temperature also increases.  When moving south from
+                          the northern hemisphere toward the equator, temperature and latitude are inversely proportional.  As the
+                          latitude decreases, the temperature increases.</p>
+                        </div></div>
+                    <div class="row">
+                      <div class="col-3"><div class="p-1">
+                          <img src="Resources/Humidity_vs_Lat_north.png" class="mw-100" alt="Latitude Vs Humidity">
+                      </div></div>
+                      <div class="col-3"><div class="p-1">
+                        <img src="Resources/Humidity_vs_Lat_south.png" class="mw-100" alt="Latitude Vs Humidity">
+                    </div></div>
+                      <div class="col-6"><div class="p-1"></div>
+                      <h4>Latitude Vs Humidity Correlation</h4>
+                      <p>Humidity and latitude show no significant correlation.  As you move closer to or further from the equator,
+                        humidity does not change in proportion to the latitude.  
+                      </p>
+                      </div></div>
+                      <div class="row">
+                        <div class="col-3"><div class="p-1">
+                            <img src="Resources/Cloudiness_vs_Lat_north.png" class="mw-100" alt="Latitude Vs Cloudiness">
+                        </div></div>
+                        <div class="col-3"><div class="p-1">
+                          <img src="Resources/Cloudiness_vs_Lat_south.png" class="mw-100" alt="Latitude Vs Cloudiness">
+                      </div></div>
+                        <div class="col-6"><div class="p-1"></div>
+                        <h4>Latitude Vs Cloudiness Correlation</h4>
+                        <p>Cloudiness and latitude show no significant correlation.  As you move closer to or further from the equator,
+                          cloudiness does not change in proportion to the latitude. </p>
+                        </div></div>
+                        <div class="row">
+                          <div class="col-3"><div class="p-1">
+                              <img src="Resources/Wind Speed_vs_Lat_north.png" class="mw-100" alt="Latitude Vs Wind Speed">
+                          </div></div>
+                          <div class="col-3"><div class="p-1">
+                            <img src="Resources/Wind Speed_vs_Lat_south.png" class="mw-100" alt="Latitude Vs Wind Speed">
+                        </div></div>
+                          <div class="col-6"><div class="p-1"></div>
+                          <h4>Latitude Vs Wind Speed Correlation</h4>
+                          <p>Wind Speed and latitudeshow no significant correlation.  As you move closer to or further from the equator,
+                            cloudiness does not change in proportion to the latitude. </p>
+                          </div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
